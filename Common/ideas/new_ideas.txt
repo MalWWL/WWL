@@ -1,0 +1,145 @@
+ideas = {
+
+	country = {
+		operation_barbarossa = {
+			Picture = operation_barbarossa
+
+			allowed = {
+			    always = no
+                tag = GER
+            }
+
+            available = { 
+            }
+            
+            cancel = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.10
+			}
+		}
+    }
+
+	country = {
+		aided_industry = {
+			Picture = aided_industry
+
+			allowed = {
+			    always = yes
+            }
+
+            available = { 
+            }
+            
+            cancel = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+            consumer_goods_factor = 0.05
+			}
+		}
+    }
+
+	country = {
+		winter_offensive = {
+			Picture = winter_offensive
+
+			allowed = {
+			    always = no
+                tag = SOV
+            }
+
+            available = { 
+            }
+            
+            cancel = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.15
+			}
+		}
+    }
+
+	country = {
+		second_winter_offensive = {
+			Picture = second_winter_offensive
+
+			allowed = {
+			    always = no
+                tag = SOV
+            }
+
+            available = { 
+            }
+            
+            cancel = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.13
+				defense_bonus_against = 0.20
+			}
+		}
+    }
+
+	country = {
+		fall_blau= {
+			Picture = fall_blau
+
+			allowed = {
+			    always = no
+                tag = GER
+            }
+
+            available = { 
+            }
+            
+            cancel = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.12
+				defense_bonus_against = 0.05
+			}
+		}
+    }
+
+}

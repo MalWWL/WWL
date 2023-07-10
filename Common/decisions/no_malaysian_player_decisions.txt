@@ -1,0 +1,14 @@
+no_malaysian_player = {
+	annex_malaysia = {
+		icon = decision_icon_annex_malaysia
+		complete_effect = {
+			annex_country = {
+    target = MAL
+    transfer_troops = yes
+}
+
+
+
+		}
+	}
+}
