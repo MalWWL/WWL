@@ -1,0 +1,20 @@
+﻿l_english:
+ GER_Operation_Barbarossa:0 "Operation Barbarossa"
+ GER_Operation_Barbarossa_desc:0 "It is time to kick in the rotten door of the Soviet Union"
+ GER_Totaler_Krieg:0 "Totaler Krieg"
+ GER_Totaler_Krieg_desc:0 "It's time to mobilize every one and everything we have in the name of the reich"
+ GER_Endsieg:0 "Endsieg"
+ GER_Endsieg_desc:0 "We must deploy every last person in the defence of the reich"
+ GER_Fall_Blau:0 "Fall Blau"
+ GER_Fall_Blau_desc:0 "Second Summer Offensive"
+ #######
+ SOV_Winter_Offensive:0 "Winter Offesnive"
+ SOV_Winter_Offensive_desc:0 "We must deploy every last person in the defence of the Motherland"
+ SOV_Second_Winter_Offensive:0 "Second Winter Offesnive"
+ SOV_Second_Winter_Offensive_desc:0 "We must deploy every last person in the defence of the Motherland"
+ #######
+ USA_War_With_Japan:0 "War With japan"
+ USA_War_With_Japan_desc:0 "We must join the war against the japanese"
+ #######
+ CAN_Annex_Britain:0 "Berb Protocol"
+ CAN_Annex_Britain_desc:0 "Annex Labador & Newfoundland"
