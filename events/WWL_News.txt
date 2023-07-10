@@ -1,0 +1,28 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = bepro_news
+
+news_event = {
+	id = bepro_news.1
+	title = "Berbb Protocols!"
+	desc = canaw
+	picture = GFX_world_bep
+	
+	major = yes
+	
+	#is_triggered_only = yes
+
+    trigger = {
+        tag = ENG
+        has_capitulated = yes
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "OK"
+	CAN = {country_event = { days = 1 id = canac.1}}
+	}
+}

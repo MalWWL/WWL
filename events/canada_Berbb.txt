@@ -1,0 +1,28 @@
+﻿###########################
+# Canada Events
+###########################
+
+add_namespace = canac
+
+country_event = {
+	id = canac.1
+	title = "Berbb Protocols"
+	desc = canac.1.d
+	picture = "GFX_canada_berbb_image"
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Commence With the Berbb Protocols"
+		ai_chance = { factor = 90 }
+		transfer_state = 331
+		transfer_state = 332
+	}
+	option = {
+		name = "Trust the Crown"
+		ai_chance = { factor = 10 }
+	}
+}
+
