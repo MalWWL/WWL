@@ -1,0 +1,31 @@
+spriteTypes = {	
+	SpriteType = {
+	name = "GFX_goal_operation_barbarossa"
+	texturefile = "gfx/interface/goals/focus_Operation_Barbarossa_ger.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_Totaler_Krieg"
+	texturefile = "gfx/interface/goals/focus_Totaler_Krieg.dds"			
+	}	
+
+		SpriteType = {
+	name = "GFX_goal_Endsieg"
+	texturefile = "gfx/interface/goals/focus_Endsieg.dds"			
+	}	
+
+		SpriteType = {
+	name = "GFX_goal_Winter_Offensive"
+	texturefile = "gfx/interface/goals/focus_Winter_Offensive.dds"			
+	}	
+    
+	SpriteType = {
+	name = "GFX_goal_Fall_Blau"
+	texturefile = "gfx/interface/goals/focus_Fall_Blau.dds"			
+	}
+
+		SpriteType = {
+	name = "GFX_Aided"
+	texturefile = "gfx/interface/goals/focus_Fall_Blau.dds"			
+	}
+	

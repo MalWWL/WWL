@@ -1,0 +1,11 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_canada_berbb_image"
+		texturefile = "gfx/event_mod_pictures/report_berb_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_world_bep"
+		texturefile = "gfx/event_mod_pictures/news_event_bep.dds"
+	}
