@@ -1,0 +1,578 @@
+﻿focus_tree = {
+	id = brazilian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = BRA
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+	
+	#########################################
+	#################ECONOMY#################
+	#########################################
+	
+	focus = {
+		id = brazil_amazon
+		icon = GFX_goal_brazil_amazon
+		x = 20
+		y = 0
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			495 = { is_owned_by = BRA }
+			set_building_level = {
+			
+			}
+			
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			random_owned_state = {
+			prioritize = { 495 }
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 24
+		}
+	}
+
+	#########################################
+	#################Military################
+	#########################################
+	
+	
+	
+	#########################################
+	#################POLITICAL###############
+	#########################################
+	
+	focus = {
+		id = revolution_scars
+		icon = GFX_goal_brazil_amazon
+		x = 2
+		y = 0
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+			has_stability > 0.15
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = revolutionary_zeal
+				add_idea = revolutionary_zeal_2
+				}
+			add_stability = -.05
+			add_political_power = 25
+
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+	}
+		
+	focus = {
+		id = tackle_internal
+		icon = GFX_goal_brazil_amazon
+		
+		x = 0
+		y = 1
+		relative_position_id = revolution_scars
+		
+		
+		available = {
+			has_stability > 0.30
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = revolution_scars }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = corruption_in_the_government
+				add_idea = corruption_in_the_government_2
+				}
+			add_stability = -.1
+			add_political_power = 25
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+	}	
+
+	focus = {
+		id = cull_corrupt_officials
+		icon = GFX_goal_brazil_amazon
+		
+		x = -1
+		y = 1
+		relative_position_id = tackle_internal
+		
+		
+		available = {
+			has_stability > 0.45
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = tackle_internal }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = corruption_in_the_government_2
+				add_idea = corruption_in_the_government_3
+				}
+			add_stability = -.1
+			add_political_power = 50 
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+	}	
+	
+	focus = {
+		id = target_the_commies
+		icon = GFX_goal_brazil_amazon
+		
+		x = 1
+		y = 1
+		relative_position_id = tackle_internal
+		
+		
+		available = {
+			has_stability > 0.35
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = tackle_internal }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = revolutionary_zeal_2
+				add_idea = revolutionary_zeal_3
+				}
+			add_stability = -.1
+			add_political_power = 50 
+			}
+
+		ai_will_do = {
+			factor = 24
+		}
+	}	
+
+	focus = {
+		id = gatekeep_offcials
+		icon = GFX_goal_brazil_amazon
+		
+		x = 0
+		y = 1
+		relative_position_id = cull_corrupt_officials
+		
+		
+		available = {
+			has_stability > 0.35
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = cull_corrupt_officials }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = corruption_in_the_government_3
+			add_stability = -.15
+			add_political_power = 75 
+			}
+
+		ai_will_do = {
+			factor = 24
+		}
+	}	
+
+	focus = {
+		id = shut_down_the_markets
+		icon = GFX_goal_brazil_amazon
+		
+		x = 0
+		y = 1
+		relative_position_id = target_the_commies
+		
+		
+		available = {
+			has_stability > 0.25
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = target_the_commies }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = illegal_market
+			add_stability = -.15
+			add_political_power = 75 
+			}
+
+		ai_will_do = {
+			factor = 24
+		}
+	}
+
+	focus = {
+		id = anti_communist_raid
+		icon = GFX_goal_brazil_amazon
+		
+		x = 1
+		y = 1
+		relative_position_id = gatekeep_offcials
+		
+		
+		available = {
+			has_stability > 0.65
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = gatekeep_offcials }
+		prerequisite = { focus = shut_down_the_markets }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = revolutionary_zeal_3
+				add_idea = revolutionary_zeal_4
+				}
+			add_stability = -.20
+			add_political_power = 100 
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+	}
+
+	focus = {
+		id = restore_faith
+		icon = GFX_goal_brazil_amazon
+		
+		x = 1
+		y = 1
+		relative_position_id = shut_down_the_markets
+		
+		
+		available = {
+			has_stability > 0.75
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = shut_down_the_markets }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = a_populace_without_faith
+			add_stability = .15
+			add_political_power = 150 
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+ 	}
+
+	focus = {
+		id = a_public_execution
+		icon = GFX_goal_brazil_amazon
+		
+		x = 0
+		y = 1
+		relative_position_id = anti_communist_raid
+		
+		
+		available = {
+			has_stability > 0.65
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = anti_communist_raid }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = revolutionary_zeal_4
+			add_stability = -.25
+			add_political_power = 150 
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+	}
+
+###################################################################SUPORT POLITICAL############################
+
+
+	focus = {
+		id = new_constitution
+		icon = GFX_goal_brazil_amazon
+		x = 8
+		y = 0
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = .1
+			add_political_power = -50
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+	}
+	
+	focus = {
+		id = BRA_new_legislation
+		icon = GFX_goal_brazil_amazon
+		x = 0
+		y = 1
+		relative_position_id = new_constitution
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = new_constitution }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = .05
+			add_political_power = 50
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+	}	
+	
+	focus = {
+		id = american_policies
+		icon = GFX_goal_brazil_amazon
+		x = 3
+		y = 1
+		relative_position_id = BRA_new_legislation
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = BRA_new_legislation }
+		mutually_exclusive = { focus = portuguese_policies }
+		mutually_exclusive = { focus = british_policies }
+		mutually_exclusive = { focus = french_policies }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = .05
+			add_political_power = 50
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+	}	
+
+	focus = {
+		id = french_policies
+		icon = GFX_goal_brazil_amazon
+		x = 1
+		y = 1
+		relative_position_id = BRA_new_legislation
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = BRA_new_legislation }
+		mutually_exclusive = { focus = portuguese_policies }
+		mutually_exclusive = { focus = american_policies }
+		mutually_exclusive = { focus = british_policies }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = .05
+			add_political_power = 50
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+	}	
+	
+	focus = {
+		id = british_policies
+		icon = GFX_goal_brazil_amazon
+		x = -3
+		y = 1
+		relative_position_id = BRA_new_legislation
+			
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = BRA_new_legislation }
+		mutually_exclusive = { focus = portuguese_policies }
+		mutually_exclusive = { focus = french_policies }
+		mutually_exclusive = { focus = american_policies }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = .05
+			add_political_power = 50
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+	}
+
+	focus = {
+		id = portuguese_policies
+		icon = GFX_goal_brazil_amazon
+		x = -1
+		y = 1
+		relative_position_id = BRA_new_legislation
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = BRA_new_legislation }
+		mutually_exclusive = { focus = british_policies }
+		mutually_exclusive = { focus = american_policies }
+		mutually_exclusive = { focus = french_policies }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = .05
+			add_political_power = 50
+			}
+		
+		ai_will_do = {
+			factor = 24
+		}
+	}
