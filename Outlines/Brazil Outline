@@ -1,0 +1,117 @@
+###Political Path###
+
+[Scars of the Revolution] // +5 STAB + 50 pp
+
+[Tackle Internal affairs] // {Require %NUM% STAB} Modify Idea "Corruption in the Government" - 1/3 reduction
+
+[Bloat Foucs] // +pp & -stab
+
+[Bloat]
+
+[Bloat]
+
+[Bloat]
+
+[Bloat]
+
+[Bloat]
+
+[Bloat]
+
+[Bloat]
+
+###SUPPORT POLITICAL PAHTH###
+
+[Erect the amazonian gulags] // +Stab & PP
+
+---Murica---
+[Imitate the Americans] // {offshoot to American Orientated policies} +50 pp
+
+	[bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+---Bri'ish--
+[imitate the British] // {offshoot to biritish inspired policies} + 50 pp
+
+	[bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+---Bonaparte--
+[imitate the Frenc] // {offshoot to French inspired policies} + 50 pp
+
+	[bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+---No Tungesten for Axis--
+[imitate the portuges] // {offshoot to Portugese inspired policies} + 50 pp
+
+	[bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+	[Bloat]
+
+###Industry###
+
+
+
+###Navy###
+
+
+
+###Air###
+
+
+
+###Army###
+
+
+
+
+
+
+
+
+
+###Ideas###
+{NEG}
+Corruption in the Government // -.5 pp, -25 Stab, +2% Consumer Goods
+
+Communist Paramilitary Forces // -.5 recruitable pop factor & .02 communism 
+
+Illegal Market // -5% consumer goods & -10 Stab
+
+A populace without faith // -10 War Support & -10 stab
+
+{POS}
+Country of the New World // 10% pop growth factor
+
+Amazon Forest // 5% pop growth factor & resource extractiob eff 15%
+
+Brazilian New Deal // +25 relation w/ usa resource extraction + 10%
+###
