@@ -1,0 +1,15 @@
+version="1.11.12"
+tags={
+	"Balance"
+	"Events"
+	"Gameplay"
+	"Map"
+	"Military"
+	"National Focuses"
+	"Technologies"
+}
+name="WorldWarL"
+picture="thumbnail.png"
+supported_version="1.12.14"
+path="C:/Users/32fav/Documents/Paradox Interactive/Hearts of Iron IV/mod/World War L"
+remote_file_id="2844912320"
