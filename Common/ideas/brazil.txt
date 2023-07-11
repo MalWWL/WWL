@@ -1,0 +1,287 @@
+ideas = {
+	country = {
+	
+		corruption_in_the_government = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				stability_factor = -0.25
+				political_power_gain = -0.15
+			}
+		}
+	}
+	
+	country = {
+	
+		corruption_in_the_government_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.12
+			}
+		}
+	}
+	
+	country = {
+	
+		corruption_in_the_government_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.06
+			}
+		}
+	}
+
+	country = {
+	
+		revolutionary_zeal = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				drift_defence_factor = -0.3
+				stability_factor = -0.05
+				war_support_factor = -0.25
+				conscription_factor = -0.05
+				communism_drift = 0.02
+			}
+		}
+	}
+	
+	country = {
+	
+		revolutionary_zeal_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				drift_defence_factor = -0.25
+				stability_factor = -0.05
+				war_support_factor = -0.2
+				conscription_factor = -0.05
+				communism_drift = 0.02
+			}
+		}
+	}
+	
+	country = {
+	
+		revolutionary_zeal_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				drift_defence_factor = -0.15
+				stability_factor = -0.05
+				war_support_factor = -0.1
+				conscription_factor = -0.025
+				communism_drift = 0.02
+			}
+		}
+	}
+	
+	country = {
+	
+		revolutionary_zeal_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				drift_defence_factor = -0.1
+				conscription_factor = -0.02
+				communism_drift = 0.01
+			}
+		}
+	}
+
+	country = {
+	
+		illegal_market = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.1
+			}
+		}
+	}
+
+	country = {
+	
+		a_populace_without_faith = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}
+		}
+	}
+
+	country = {
+	
+		country_of_the_new_world = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				monthly_population = 0.15
+			}
+		}
+	}
+
+	country = {
+	
+		amazon_forest = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				monthly_population = 0.05
+				state_resources_factor = 0.2
+				country_resource_rubber = 32
+			}
+		}
+	}
+
+	country = {
+	
+		brazilian_new_deal = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = BRA
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				civilian_factory_use = 5
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}			
+}
